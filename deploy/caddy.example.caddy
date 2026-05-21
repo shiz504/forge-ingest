@@ -1,0 +1,12 @@
+# Example Caddy route for forge-ingest.
+# Replace hostnames with your own domain.
+
+https://ingest.example.net {
+    log {
+        output discard
+    }
+
+    reverse_proxy host.docker.internal:8092 {
+        header_up X-Real-IP {http.request.remote.host}
+    }
+}

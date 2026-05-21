@@ -1,0 +1,12 @@
+.env
+secrets/forge_deploy_key
+secrets/forge_deploy_key.pub
+secrets/forge_known_hosts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.coverage
+repomix-output.*
+ingest-urls.with-token.md
+.DS_Store
